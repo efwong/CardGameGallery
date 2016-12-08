@@ -27,7 +27,12 @@ module.exports = {
       },
       { test: /\.json$/, loader: 'json-loader' },
       { test: /\.s?css$/, loader: 'style!css?importLoaders=2&sourceMap!autoprefixer?browsers=last 2 version!sass?outputStyle=expanded&sourceMap' },
-      { test: /\.(png|svg|jpg|jpeg)$/, loader: 'url-loader?limit=10240' }
+      { test: /\.(png|svg|jpg|jpeg)$/, loader: 'file-loader',
+        query: {
+          limit: 8192,
+          name: 'images/[name].[ext]'
+        }     
+      }
     ]
   },
   resolve: {

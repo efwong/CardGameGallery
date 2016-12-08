@@ -1,8 +1,11 @@
 # CardGame
+
 I created a generic Card Game class and associated classes in C# for the sigfig assignment.
 The generic Card Game provide basic features required in any card game (shuffling, dealing, etc.)
 
 ## Project Files
+
+* Inside the CardGame directory
 
 #### Card
 
@@ -33,5 +36,28 @@ I made the DeckManager an interface because I assumed that there can be other im
 * Dealing a hand to a player
 * Playing a round
 * Abstract method for determining a winner
+
+
+
+
+# Image Gallery
+
+I implemented an image gallery to display images that can be dragged and dropped.
+My default implementation should show a grid of 3x4 images that can be dragged and dropped.
+
+### Implementation
+I used webpack, node + express, with babel to build this project in es6 with additional features like lazy loaded modules and automatic js & html refresh. The main code used is javascript in es6.
+
+
+### Assumptions
+* When an image is dragged to a destination, the original location will maintain the original image, the destination dropped location will get the dragged image. In the end, there will be two identical images.
+
+### Files of interest
+
+* Inside the ImageGallery directory
+
+1. draggable -> implements drag and drop logic
+2. GridGenerator -> implements the grid
+3. index.js -> main frontend loader
 
 
