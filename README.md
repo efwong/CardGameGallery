@@ -49,6 +49,7 @@ My default implementation should show a grid of 3x4 images that can be dragged a
 ### Installation inside ImageGallery directory
 1. npm install
 2. npm start
+3. go to localhost:3020
 
 ### Implementation
 I used webpack, node + express, with babel to build this project in es6 with additional features like lazy loaded modules and automatic js & html refresh. The main code used is javascript in es6.
