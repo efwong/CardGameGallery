@@ -45,6 +45,11 @@ I made the DeckManager an interface because I assumed that there can be other im
 I implemented an image gallery to display images that can be dragged and dropped.
 My default implementation should show a grid of 3x4 images that can be dragged and dropped.
 
+
+### Installation inside ImageGallery directory
+1. npm install
+2. npm start
+
 ### Implementation
 I used webpack, node + express, with babel to build this project in es6 with additional features like lazy loaded modules and automatic js & html refresh. The main code used is javascript in es6.
 
